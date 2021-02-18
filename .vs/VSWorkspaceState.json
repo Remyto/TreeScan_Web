@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\control",
+    "\\src\\main\\java\\model",
+    "\\WebContent",
+    "\\WebContent\\WEB-INF",
+    "\\WebContent\\WEB-INF\\jsps",
+    "\\WebContent\\WEB-INF\\views"
+  ],
+  "SelectedNode": "\\WebContent\\WEB-INF\\index.html",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app version="4.0" 
+		 xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+  
+	<!--TO DO
+include common header and footer in all jsps-->
+	
+	
+	
+  <session-config>
+    <session-timeout>
+      30
+    </session-timeout>
+  </session-config>
+	
+	
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+	
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+	
+  <servlet>
+    <servlet-name>Authentificate_Servlet</servlet-name>
+    <servlet-class>control.Authentificate_Servlet</servlet-class>
+
+	<!--parameters for test purposes-->
+    <init-param>
+        <param-name>goodLogin</param-name>
+        <param-value>jee</param-value>
+    </init-param>
+    <init-param>
+        <param-name>goodPass</param-name>
+        <param-value>jee</param-value>
+    </init-param>
+	<!--end of test params-->
+	  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Authentificate_Servlet</servlet-name>
+    <url-pattern>/Authentificate_Servlet</url-pattern>
+  </servlet-mapping>
+
+	
+</web-app>
